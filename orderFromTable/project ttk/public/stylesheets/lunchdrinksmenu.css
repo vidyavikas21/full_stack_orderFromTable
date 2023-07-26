@@ -1,0 +1,120 @@
+body{
+    background-color: darkgrey;
+}
+#details{
+    width: 33.33%;
+    border-style:groove;
+    border-color: black;
+    height: 530px;
+    border-radius: 20px;
+}
+#customer{
+    color: black;
+    position: absolute;
+    top: 120px;
+    left:30px
+}
+#seltab{
+    position: absolute;
+    top: 160px;
+    left:30px
+}
+#textarea{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    border-radius: 30px;
+}
+#title{
+    text-align: center;
+    color:black;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#orders{
+    position: absolute;
+    top: 8px;
+    left: 34%;
+    border-style: groove;
+    border-color: black;
+    height: 530px;
+    width:65%;
+    border-radius: 20px;
+}
+#item{
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    border-style: groove;
+    border-color: black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+}
+#item:hover{
+    height: 205px;
+    width: 155px;
+    box-shadow: 10px 10px 10px;
+}
+#itemimg{
+    position: relative;
+    top:10px;
+    left:10px;
+    width: 130px;
+    height: 100px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: groove;
+}
+#quantity{
+    position: relative;
+    left:20px;
+    top:60px;
+    width:100px
+}
+#submit{
+    position: absolute;
+    left: 150px;
+    top:480px;
+    background-color: darkgreen;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+#c{
+    width: 250px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+}
+#select{
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+}
+/* #info{
+    position: absolute;
+    left: 20%;
+    top: 115px;
+    height: 40px;
+    width: 80px;
+    border-color: black;
+    border-style: groove;
+
+} */
+#itemname{
+    position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#price{
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
+}

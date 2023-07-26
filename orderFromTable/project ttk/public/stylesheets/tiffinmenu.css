@@ -1,0 +1,96 @@
+body{
+    background-color: darkgrey;
+}
+#details{
+    width: 33.33%;
+    border-style:groove;
+    border-color: black;
+    height: 530px;
+    border-radius: 20px;
+}
+#customer{
+    color: black;
+    position: absolute;
+    top: 120px;
+    left:30px
+}
+#seltab{
+    position: absolute;
+    top: 160px;
+    left:30px
+}
+#textarea{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    border-radius: 30px;
+}
+#title{
+    text-align: center;
+    color:black;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#orders{
+    position: absolute;
+    top: 8px;
+    left: 34%;
+    border-style: groove;
+    border-color: black;
+    height: 530px;
+    width:65%;
+    border-radius: 20px;
+}
+#item{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    border-style: groove;
+    border-color: black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}
+#item:hover{
+    height: 155px;
+    width: 155px;
+    box-shadow: 10px 10px 10px;
+}
+#itemimg{
+    position: relative;
+    top:10px;
+    left:10px;
+    width: 130px;
+    height: 100px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: groove;
+}
+#quantity{
+    position: relative;
+    left:20px;
+    top:15px;
+    width:100px
+}
+#submit{
+    position: absolute;
+    left: 150px;
+    top:480px;
+    background-color: darkgreen;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+#c{
+    width: 250px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+}
+#select{
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+}

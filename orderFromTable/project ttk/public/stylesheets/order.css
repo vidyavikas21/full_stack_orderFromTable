@@ -1,0 +1,37 @@
+body{
+    background-color: darkgrey;
+}
+#title{
+    text-align: center;
+    color:black;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#selopt{
+    height: 300px;
+    width:250px;
+    position:absolute;
+    left:80px;
+    top:100px;
+    border-color: black;
+    border-style: double;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+}
+#selopt:hover{
+    height: 320px;
+    width: 260px;
+    box-shadow: 10px 10px 10px 10px;
+}
+#image{
+    position: relative;
+    top:25px;
+    left:25px;
+    border-radius: 10px;
+}
+#name{
+    position:relative;
+    top:40px;
+    text-align: center;
+}

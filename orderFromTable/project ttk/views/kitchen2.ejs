@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kitchen2</title>
+</head>
+<body>
+    <div>
+        <p>Name : <%= name1 %></p>
+        <p>TABLE: <%= table1 %></p>
+        <h2>Recomendations: <%= recomendations1 %></h2>
+        
+    </div>
+    <h3>ordered Tiffin Details:</h3>
+<ul>
+  <% for (const key in tiffinDetails) { %>
+    <li><%= key %>: <%= tiffinDetails[key] %></li>
+  <% } %>
+</ul>
+
+<h3>ordered Lunch Details:</h3>
+<ul>
+  <% for (const key in lunchDetails) { %>
+    <li><%= key %>: <%= lunchDetails[key] %></li>
+  <% } %>
+</ul>
+
+<h3>ordered Drinks Details:</h3>
+<ul>
+  <% for (const key in drinksDetails) { %>
+    <li><%= key %>: <%= drinksDetails[key] %></li>
+  <% } %>
+</ul>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        // Handle delete button click
+        const deleteButtons = document.querySelectorAll('button[type="submit"]');
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                const confirmation = confirm('Are you sure you want to delete this item?');
+
+                if (confirmation) {
+                    const url = button.parentNode.getAttribute('action');
+                    axios.delete(url)
+                        .then(response => {
+                            if (response.status === 200) {
+                                window.location.reload();
+                            }
+                        })
+                        .catch(error => {
+                            console.log(error);
+                        });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

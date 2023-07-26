@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drinksmenu</title>
+    <link rel="stylesheet" href="/stylesheets/lunchdrinksmenu.css">
+</head>
+<body>
+    <form method="post" action="/drinksmenu">
+        <div id="details">
+            <p id="title">ENTER DETAILS</p>
+        <div id="customer">
+        <label for="customer" id="cd" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Your Name : </label>
+        <input type="text" id="c" name="name"><br>
+        </div>
+        <div id="seltab">
+        <label for="table" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Choose your table : </label>
+        <select name="table" id="select" value="select table" name="table">
+            <option value="table1">table1</option>
+            <option value="table2">table2</option>
+            <option value="table3">table3</option>
+            <option value="table4">table4</option>
+            <option value="table5">table5</option>
+            <option value="table6">table6</option>
+            <option value="table7">table7</option>
+            <option value="table8">table8</option>
+            <option value="table9">table9</option>
+            <option value="table10">table10</option>
+            <option value="table11">table11</option>
+            <option value="table12">table12</option>
+          </select><br>
+        </div>
+        <div id="textarea">
+        <lable for="textarea" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">enter any recomendations for taste</lable><br>
+        <textarea cols="50" rows="15" id="ta" name="textarea" name="recomendations"></textarea>
+        </div>
+        </div>
+      <div id="orders">
+        <div id="item">
+          <label>
+            <img src="/images/water bottle.jpeg" alt="water" id="itemimg" />
+            <br>
+            <div id="info">
+            <p id="itemname">Water</p>
+            <p id="price">Rs 20</p>
+          </div>
+            <input type="number" name="water" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:250px">
+          <label>
+            <img src="/images/milk.jpeg" alt="Milk" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Milk</p>
+              <p id="price">Rs 15</p>
+            </div>
+            <input type="number" name="milk" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:450px">
+          <label>
+            <img src="/images/tea.jpeg" alt="Tea" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Tea</p>
+              <p id="price">Rs 15</p>
+            </div>
+            <input type="number" name="tea" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:650px">
+          <label>
+            <img src="/images/coffee.jpg" alt="coffee" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Coffee</p>
+              <p id="price">Rs 15</p>
+            </div>
+            <input type="number" name="coffee" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+
+
+        <div id="item" style="top: 250px;">
+          <label>
+            <img src="/images/apple.jpeg" alt="apple" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Apple</p>
+              <p id="price">Rs 60</p>
+            </div>
+            <input type="number" name="apple" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:250px;top: 250px;">
+          <label>
+            <img src="/images/water melon.jpeg" alt="melon" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Melon</p>
+              <p id="price">Rs 50</p>
+            </div>
+            <input type="number" name="melon" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:450px;top: 250px;">
+          <label>
+            <img src="/images/grape.jpeg" alt="grape" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Grape</p>
+              <p id="price">Rs 50</p>
+            </div>
+            <input type="number" name="grape" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:650px;top: 250px;">
+          <label>
+            <img src="/images/mango juice.jpeg" alt="mango" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Mango</p>
+              <p id="price">Rs 40</p>
+            </div>
+            <input type="number" name="mango" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+      </div>
+
+
+        
+    <button type="submit" id="submit">Submit</button>
+  </form>
+    
+    
+    
+    
+    
+    
+</body>
+</html>

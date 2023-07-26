@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oder_bill</title>
+</head>
+<body>
+  <div>
+      <h1>Bill</h1>
+  </div>
+  <div>
+      <p>Name : <%= name1 %></p>
+      <p>TABLE: <%= table1 %></p>
+      
+  </div>
+<div>
+<% if (Object.keys(filteredParams).length > 0) { %>
+  <h2>ORDERED ITEMS</h2>
+  <% for (const [key, value] of Object.entries(filteredParams)) { %>
+    <p><%= key %>: <%= value %></p>
+  <% } %>
+<% } else { %>
+  <p>No filtered parameters found.</p>
+<% } %>
+</div>
+<div>
+  ORDERED SUCCESSFULLY
+</div>
+</body>
+</html>

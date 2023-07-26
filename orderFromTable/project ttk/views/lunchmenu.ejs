@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lunchmenu</title>
+    <link rel="stylesheet" href="/stylesheets/lunchdrinksmenu.css">
+</head>
+<body>
+    <form method="post" action="/lunchmenu">
+        <div id="details">
+            <p id="title">ENTER DETAILS</p>
+        <div id="customer">
+        <label for="customer" id="cd" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Your Name : </label>
+        <input type="text" id="c" name="name"><br>
+        </div>
+        <div id="seltab">
+        <label for="table" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Choose your table : </label>
+        <select name="table" id="select" value="select table" name="table">
+            <option value="table1">table1</option>
+            <option value="table2">table2</option>
+            <option value="table3">table3</option>
+            <option value="table4">table4</option>
+            <option value="table5">table5</option>
+            <option value="table6">table6</option>
+            <option value="table7">table7</option>
+            <option value="table8">table8</option>
+            <option value="table9">table9</option>
+            <option value="table10">table10</option>
+            <option value="table11">table11</option>
+            <option value="table12">table12</option>
+          </select><br>
+        </div>
+        <div id="textarea">
+        <lable for="textarea" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">enter any recomendations for taste</lable><br>
+        <textarea cols="50" rows="15" id="ta" name="rcomendations"></textarea>
+        </div>
+        </div>
+    
+      <div id="orders">
+        <div id="item">
+          <label>
+            <img src="/images/meals.jpeg" alt="meals" id="itemimg" />
+            <br>
+            <div id="info">
+            <p id="itemname">Meals</p>
+            <p id="price">Rs 100</p>
+          </div>
+            <input type="number" name="meals" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:250px">
+          <label>
+            <img src="/images/chicken biryani.jpeg" alt="chicken biryani" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Chicken Biryani</p>
+              <p id="price">Rs 180</p>
+            </div>
+            <input type="number" name="chicken_biryani" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:450px">
+          <label>
+            <img src="/images/fish curry.jpeg" alt="fish curry" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Fish Curry</p>
+              <p id="price">Rs 150</p>
+            </div>
+            <input type="number" name="fish_curry" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:650px">
+          <label>
+            <img src="/images/mutton biryani.jpeg" alt="Mutton Biryani" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Mutton Biryani</p>
+              <p id="price">Rs 250</p>
+            </div>
+            <input type="number" name="mutton_biryani" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+
+
+        <div id="item" style="top: 250px;">
+          <label>
+            <img src="/images/veg biryani.jpeg" alt="veg biryani" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Veg Biryani</p>
+              <p id="price">Rs 100</p>
+            </div>
+            <input type="number" name="veg_biryani" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:250px;top: 250px;">
+          <label>
+            <img src="/images/egg biryani.jpeg" alt="egg rice" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Egg Biryani</p>
+              <p id="price">Rs 100</p>
+            </div>
+            <input type="number" name="egg_biryani" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:450px;top: 250px;">
+          <label>
+            <img src="/images/egg curry.jpeg" alt="egg curry" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">Egg Curry</p>
+              <p id="price">Rs 120</p>
+            </div>
+            <input type="number" name="egg_curry" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+        <div id="item" style="left:650px;top: 250px;">
+          <label>
+            <img src="/images/curd rice.jpeg" alt="curd rice" id="itemimg" />
+            <br>
+            <div id="info">
+              <p id="itemname">curd rice</p>
+              <p id="price">Rs 60</p>
+            </div>
+            <input type="number" name="curd_rice" value="0" min="0" id="quantity"/>
+          </label>
+        </div>
+      </div>
+
+
+        
+    <button type="submit" id="submit">Submit</button>
+      </form>
+    
+    
+    
+    
+    
+    
+</body>
+</html>
